@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* header styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+}
+
+.cont-h1 {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.cont-h1 img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.cont-h1 a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.cont-h2 input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 209, 209);
+}
+
+.cont-h2 input:hover {
+    border: 3px solid skyblue
+}
+
+.cont-h2 button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* main styles */
+
+.cont-img {
+    background-image: url(img/fondo\ visual.jpg);
+    height: 500px;
+    /* background: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;  
+    font-weight: 100; 
+}
+
+.fondo-google {
+    border: 20px solid rgba(191, 148, 236, 0.415);
+    width: 100%;
+}
+
+.titulo {
+    font-size: 40px;
+    padding: 30px;
+    text-align: center;
+}
+.cont-card {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+
+}
+.card {
+    background-color: beige;
+    width: 350px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 5px 30px -10px rgba(0,0,0,0.78);
+}
+
+.card h1, p {
+    margin: 15px;
+}
+
+.link-card {
+    padding: 15px;
+}
+
+.link-card a {
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 8px;    
+}
+
+.cont-div-form {
+    background-color: white;
+    height: 600px;
+    /* border-bottom: 1px solid gray; */
+}
+
+.cont-form {
+    background-color: #f2f2f2;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-form h1 {
+    margin: 50px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 100vh;
+    font-size: small;
+}
+
+li input {
+   padding: 10px;
+   border: 1px solid rgb(173, 173, 173);
+   border-radius: 5px;
+}
+
+li input:hover {
+    border: 3px solid skyblue
+}
+
+li textarea {
+    padding: 10px;
+    height: 80px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
+    
+}
+
+li textarea:hover {
+    border: 3px solid skyblue
+}
+
+form button {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li input:hover {
+    border: 3px solid skyblue
+}
+
+/* Footer styles */
+
+footer {
+    justify-content: center;
+    width: 100%;
+    /* background-color: #ba3f3f; */
+}
+
+.cont-footer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    height: 300px;
+}
+
+.cont-footer div {
+    width: 300px;
+    /* background-color: aqua; */
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.cont-footer .proyectos {
+    width: 200px;
+}
+
+.cont-footer .consultas {
+    width: 200px;
+}
+
+.link-proyectos {
+    display: flex;
+    flex-direction: column;
+    color: rgb(53, 53, 53);
+    margin: 15px;
+}
+
+.link-consultas {
+
+    display: flex;
+    flex-direction: column;
+    color: rgb(53, 53, 53);
+    margin: 15px;
+ 
+}
+
+.copyright {
+    display: block;
+    align-items: end;
+}
+
+.copyright div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #f2f2f2;
+}
+
+.copyright a {
+    color: black;
+}
+
+/*media queries*/
+
+@media (max-width:1300px) {
+    .cont-card {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:880px) {
+   .cont-card {
+        grid-template-columns: 1fr;
+    }
+    .cont-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;            
+    }
+    .copyright {
+      
+      
+    }
+    }
